@@ -12,7 +12,6 @@ public class BloodBankController {
 		  try {
 			bloodBankServiceImpl.addBloodBankCenter(bloodBankCenter);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	   }
