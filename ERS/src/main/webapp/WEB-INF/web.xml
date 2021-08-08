@@ -86,6 +86,48 @@
         <servlet-name>abc</servlet-name>
         <servlet-class>ValidationServ</servlet-class>
     </servlet>
+   <servlet>
+   	<servlet-name>DisplayEmployees</servlet-name>
+   	<display-name>DisplayEmployees</display-name>
+   	<description></description>
+   	<servlet-class>com.ers.controller.DisplayEmployees</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>EmployeeRegistrationSuccess</servlet-name>
+   	<display-name>EmployeeRegistrationSuccess</display-name>
+   	<description></description>
+   	<servlet-class>com.ers.controller.EmployeeRegistrationSuccess</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>ListAllEmployeeForUpdate</servlet-name>
+   	<display-name>ListAllEmployeeForUpdate</display-name>
+   	<description></description>
+   	<servlet-class>com.ers.controller.ListAllEmployeeForUpdate</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>UpdateEmployee</servlet-name>
+   	<display-name>UpdateEmployee</display-name>
+   	<description></description>
+   	<servlet-class>com.ers.controller.UpdateEmployee</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>EmployeeMapper</servlet-name>
+   	<display-name>EmployeeMapper</display-name>
+   	<description></description>
+   	<servlet-class>com.ers.db.EmployeeMapper</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>HibernateUtil</servlet-name>
+   	<display-name>HibernateUtil</display-name>
+   	<description></description>
+   	<servlet-class>com.ers.db.HibernateUtil</servlet-class>
+   </servlet>
+   <servlet>
+   	<servlet-name>EmployeeEntity</servlet-name>
+   	<display-name>EmployeeEntity</display-name>
+   	<description></description>
+   	<servlet-class>com.ers.entity.EmployeeEntity</servlet-class>
+   </servlet>
     <servlet-mapping>
         <servlet-name>abc</servlet-name>
         <url-pattern>/validation</url-pattern>
@@ -141,5 +183,33 @@
   <servlet-mapping>
   	<servlet-name>EmployeeLoginServiceImpl</servlet-name>
   	<url-pattern>/EmployeeLoginServiceImpl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DisplayEmployees</servlet-name>
+  	<url-pattern>/DisplayEmployees</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeRegistrationSuccess</servlet-name>
+  	<url-pattern>/EmployeeRegistrationSuccess</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListAllEmployeeForUpdate</servlet-name>
+  	<url-pattern>/ListAllEmployeeForUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateEmployee</servlet-name>
+  	<url-pattern>/UpdateEmployee</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeMapper</servlet-name>
+  	<url-pattern>/EmployeeMapper</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>HibernateUtil</servlet-name>
+  	<url-pattern>/HibernateUtil</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeEntity</servlet-name>
+  	<url-pattern>/EmployeeEntity</url-pattern>
   </servlet-mapping>
 </web-app>

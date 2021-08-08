@@ -3,21 +3,16 @@ package com.ers.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
-
-import com.ers.bo.IDGenerator;
 import com.ers.model.Employee;
-import com.ers.service.EmployeeRegistrationService;
 import com.ers.service.EmployeeRegistrationServiceImpl;
 
-public class EmployeeServlet extends HttpServlet {
-	static Logger logger = Logger.getLogger("EmployeeServlet.class");
+public class UpdateEmployee extends HttpServlet {
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
@@ -42,17 +37,7 @@ public class EmployeeServlet extends HttpServlet {
 		//service need to be invoked 
 		EmployeeRegistrationServiceImpl employeeService =new EmployeeRegistrationServiceImpl();
 		
-		employeeService.addEmployee(employee);
-		
-		RequestDispatcher rd=request.getRequestDispatcher("index.jsp");
-		
-		rd.forward(request, response);
-		
-		//out.println(" Registration / Sign up success");
-		//out.println("<table>")
-		//out.println(" <h1>"+employee.getDepartment());
-		//out.println(id+"  "+name);
-		
+		employeeService.updateEmployee(employee);
 	}
 
 }

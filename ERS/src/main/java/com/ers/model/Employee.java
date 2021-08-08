@@ -9,7 +9,9 @@ public class Employee {
 	private String department;
 	private String email;
 	private String type;
-	
+	public String getType() {
+		return type;
+	}
 	@Override
 	public String toString() {
 		return "Employee [employeeId=" + employeeId + ", password=" + password + ", employeeName=" + employeeName
@@ -35,9 +37,6 @@ public class Employee {
 	}
 	public void setType(String type) {
 		this.type = type;
-	}
-	public String getType() {
-		return type;
 	}
 	public Integer getEmployeeId() {
 		return employeeId;
@@ -69,7 +68,7 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-   
+
 	
 	public Employee() {}
 	
